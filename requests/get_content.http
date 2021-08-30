@@ -1,0 +1,9 @@
+GET {{host}}/documents
+Accept: application/json
+
+###
+
+GET {{host}}/external_links
+Accept: application/json
+
+###

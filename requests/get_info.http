@@ -1,0 +1,15 @@
+GET {{host}}/info/news
+Accept: application/json
+
+###
+
+
+GET {{host}}/info/notams
+Accept: application/json
+
+###
+
+GET {{host}}/info/staff
+Accept: application/json
+
+###

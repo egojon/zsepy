@@ -1,0 +1,48 @@
+POST {{host}}/training/objective/assign/
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{"student_cid": 1, "objective_set_id": 1}
+
+###
+
+POST {{host}}/training/debrief
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "student_cid": 1,
+  "training_type": "CLASSROOM",
+  "training_stage_key":"MINOR_GROUND",
+  "score": 5,
+  "comments": "Test Comments",
+  "notes": "Test Notes",
+  "duration": 60,
+  "movements": 20,
+  "is_private": false,
+  "is_ots_ready": false,
+  "is_pass": false,
+  "session_date": "2021-07-28",
+  "training_objectives": [
+    {"objective_id": 1, "is_lecture": true, "is_observed": true, "is_focus_area": true, "score": 5}
+  ]
+}
+
+###
+
+
+
+
+PUT {{host}}/training/certification/1
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "delivery": "TRAIN",
+  "ground": "TRAIN",
+  "tower": "TRAIN",
+  "approach": "TRAIN",
+  "center": "TRAIN"
+}
+
+###

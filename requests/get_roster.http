@@ -1,0 +1,4 @@
+GET {{host}}/roster
+Accept: application/json
+
+###

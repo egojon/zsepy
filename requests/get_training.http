@@ -1,0 +1,11 @@
+GET {{host}}/training/stages
+Authorization: Bearer {{jwt}}
+Accept: application/json
+
+###
+
+GET {{host}}/training/stages/1
+Authorization: Bearer {{jwt}}
+Accept: application/json
+
+###

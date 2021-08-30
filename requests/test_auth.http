@@ -1,0 +1,11 @@
+GET {{host}}/auth/test/key/17
+Accept: application/json
+
+> {% client.global.set("jwt", response.body.jwt); %}
+###
+
+GET {{host}}/auth/test/private
+Authorization: Bearer {{jwt}}
+Accept: application/json
+
+###

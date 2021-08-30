@@ -1,0 +1,4 @@
+GET {{host}}/nav/preferred_routes
+Accept: application/json
+
+###
